@@ -1,0 +1,7 @@
+# Kelvin's app code lives in his own private repo (bangsarmanagement/bft-coach-hub)
+app/
+.crew-wt/
+node_modules/
+.DS_Store
+.env*
+*.log
