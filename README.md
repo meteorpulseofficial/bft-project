@@ -94,6 +94,7 @@ extra studio.
 
 | File | What it is |
 |---|---|
+| **[PROJECT-PLAN.md](PROJECT-PLAN.md)** | **Coach Hub delivery plan, phase by phase (confirmed 19 Nov)** |
 | [HANDOVER.md](HANDOVER.md) | Original background (13 Nov): who Kelvin is, the first call, strategy, how we work |
 | [BFT-Coach-Hub-Build-Plan-2026-09-27.pdf](BFT-Coach-Hub-Build-Plan-2026-09-27.pdf) | Kelvin's own Coach Hub plan |
 | **prep/** | |

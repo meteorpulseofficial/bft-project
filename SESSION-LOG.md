@@ -15,6 +15,28 @@ Every session ends with these four sections, newest first. An empty section says
 
 ## Logged live
 
+### 2026-11-19: Coach Hub confirmed, deposit paid (Phase 0)
+
+**Done & verified**
+- Kelvin confirmed Coach Hub (RM5,000 build). 50% deposit paid (per Aaron, 19 Nov).
+- Our GitHub account has **push** access to `bangsarmanagement/bft-coach-hub` (checked via
+  API, 19 Nov). Only `main` exists, last push still 26 Sep (`c1dae4e`).
+- Phase plan written: `PROJECT-PLAN.md`.
+
+**Done but unverified**
+- none
+
+**Needs your approval**
+- Send kick-off WhatsApp (`prep/kickoff-message.md`): Supabase Pro, Supabase + Vercel invites,
+  branch protection on `main`, migrations 6–7 applied?, unpushed changes?
+- One-page agreement not yet sent. Monthly support fee still to agree.
+
+**Open**
+- Push access means a mistaken push to `main` would deploy to live coaches. Until Kelvin adds
+  branch protection, our rule stands: never push `main`, only `crew/*` branches + PRs.
+- The marketing proposal PDF still says the RM25 bonus was "agreed for Coach Hub". Fix before
+  sending.
+
 ### 2026-11-14: /crew review, code audit (checker only, no edits)
 
 **Done & verified**
