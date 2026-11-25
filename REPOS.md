@@ -10,15 +10,16 @@ relative to `app/`.
 | **db** | The database: timestamped SQL migrations run by hand in Supabase's SQL editor, RLS, ~45 `security definer` functions, view `extra_earnings` (security_invoker) | `supabase/migrations/2026092*_*.sql` (7 files, 0001–0007), `supabase/tests/*.sql` | `bft-db` | `cd supabase && ./tests/run.sh`: plain Postgres on socket `/tmp/pg:54329` with an `auth` stub (`tests/00_supabase_stub.sql`). Needs Postgres installed locally | SQL on production Supabase: Aaron's yes **and** Kelvin's. It is his database |
 | **review** | Read everything, change nothing. The code audit | everything | nobody | `bft-checker`, six lenses | none |
 
-Next migration number: `…000008`. Never edit 0001–0007.
+Next migration number: `…000022` (0008–0021 are on crew branches, not yet in Kelvin's main). Never edit 0001–0007.
 
 ## Environments
 
 | | URL | Supabase | Status |
 |---|---|---|---|
 | Production | bft-coach-hub.vercel.app | Kelvin's project, Singapore, Free plan | Live. Real coaches. **Never touched by the crew** |
-| Staging | (to create) | second project, fake data | Does not exist yet |
-| Local DB tests | n/a | plain Postgres on `/tmp/pg:54329` | Postgres not installed on this Mac yet |
+| Demo (Aaron's) | localhost:3000 + sign-in page localhost:3001 | Aaron's free project `coach-hub-demo` (muczjyfeduajeupcbmfo), fake data | Running on this Mac; see `demo/README.md`. Not Kelvin's staging |
+| Staging | (to create) | second project, fake data | Does not exist yet (needs Kelvin's invites) |
+| Local DB tests | n/a | plain Postgres 17 on `/tmp/pg:54329` (Postgres.app) | Installed 20 Nov |
 
 Env vars (`.env.example`): `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`,
 `SUPABASE_SERVICE_ROLE_KEY` (server only, used in `src/lib/people-actions.ts`),
@@ -29,8 +30,8 @@ Env vars (`.env.example`): `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANO
 | Piece | Path | Status |
 |---|---|---|
 | Kelvin's SQL tests, Stage 1–2b | `app/supabase/tests/10…60_*.sql` | exist, not yet run by us |
-| Seed data: every role, two studios, coach at both, Lead, 1 strike, cancelled class | (to create) | not built |
-| Role × table matrix (20 tables + view + RPCs) | (to create, as SQL tests in the same runner) | not built |
+| Seed data: every role, two studios, coach at both, Lead, 1 strike, cancelled class | `demo/seed.sql` (demo) and the fixtures inside `70_access_matrix.sql` | built 20 Nov |
+| Role × table matrix (20 tables + view + RPCs) | `supabase/tests/70_access_matrix.sql` (branch crew/access-matrix) | built 20 Nov, reads only |
 | Money golden file | `prep/golden-month-oct-2026.md` | drafted by hand, needs Kelvin's real rates |
 | Frozen clock time tests | (to create) | not built |
 | Phone check, 390 + 1440, no sideways scroll | (to create) | not built |

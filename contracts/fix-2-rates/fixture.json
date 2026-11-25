@@ -1,0 +1,22 @@
+{
+  "_note": "PostgREST returns numeric as JSON numbers; the app must also cope with strings. Display: 50 -> '50%', 47.5 -> '47.5%'.",
+  "studio_pay_settings": {
+    "as_owner_all": [
+      { "studio_id": "11111111-1111-1111-1111-111111111111", "lead_rate": 80, "support_rate": 60, "lead_covering_support_rate": "support", "challenge_coach_pct": 50, "pt_coach_pct": 50 },
+      { "studio_id": "22222222-2222-2222-2222-222222222222", "lead_rate": null, "support_rate": null, "lead_covering_support_rate": "support", "challenge_coach_pct": 50, "pt_coach_pct": 60 }
+    ],
+    "as_owner_one_studio_missing_rates": [
+      { "studio_id": "22222222-2222-2222-2222-222222222222", "lead_rate": null, "support_rate": null, "lead_covering_support_rate": "lead", "challenge_coach_pct": 40, "pt_coach_pct": 60 }
+    ],
+    "as_owner_string_form": [
+      { "studio_id": "11111111-1111-1111-1111-111111111111", "lead_rate": "80.00", "support_rate": "60.00", "lead_covering_support_rate": "support", "challenge_coach_pct": "47.50", "pt_coach_pct": "50.00" }
+    ],
+    "as_manager_or_coach": [],
+    "unknown_studio": []
+  },
+  "studio_default_splits": {
+    "as_own_manager": [ { "challenge_coach_pct": 50, "pt_coach_pct": 50 } ],
+    "as_other_studio_manager": [],
+    "as_coach": []
+  }
+}

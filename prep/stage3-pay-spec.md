@@ -119,6 +119,9 @@ Stage 3 code, not after.
 - **Q-4. Grace boundary.** Is 10 min 00 s after call time late or on time?
 - **Q-5. Leftover sen.** RM2,500 split three ways is RM833.33 each, 1 sen short. Who gets
   it: the first coach, the Lead, or does it stay with the studio?
+  *(Since fix #6, 22 Nov: each coach's payout is rounded **down** to the sen and the leftover
+  goes to nobody until you answer. Please also confirm rounding down is right — before, it
+  rounded to the nearest sen, which could pay out more than the pool.)*
 - **Q-6. Cancellation notice.** Your Stage 2 checklist has this open. If the studio
   cancels within X hours, does the coach get any pay?
 - **Q-7. Full-timers' extras.** Full-time coaches get no class invoice, but can run PT

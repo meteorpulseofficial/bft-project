@@ -1,0 +1,15 @@
+[
+  {"key": "owner",   "email": "owner@example.com",   "name": "Olivia Tan",      "type": "staff",     "phone": "+60120000001", "label": "Owner",                      "org": "owner"},
+  {"key": "gm",      "email": "gm@example.com",      "name": "Gavin Lim",       "type": "staff",     "phone": "+60120000002", "label": "General Manager",            "org": "gm"},
+  {"key": "finance", "email": "finance@example.com", "name": "Farah Aziz",      "type": "staff",     "phone": "+60120000003", "label": "Finance",                    "org": "finance"},
+  {"key": "mgr-bgs", "email": "meiling@example.com", "name": "Mei Ling Wong",   "type": "staff",     "phone": "+60120000004", "label": "Studio manager (Bangsar)"},
+  {"key": "mgr-sbj", "email": "suresh@example.com",  "name": "Suresh Kumar",    "type": "staff",     "phone": "+60120000005", "label": "Studio manager (Subang)"},
+  {"key": "aisha",   "email": "aisha@example.com",   "name": "Aisha Rahman",    "type": "part_time", "phone": "+60120000011", "label": "Coach, Lead approved (Bangsar)"},
+  {"key": "ben",     "email": "ben@example.com",     "name": "Ben Koh",         "type": "part_time", "phone": "+60120000012", "label": "Coach, support only (Bangsar)"},
+  {"key": "chloe",   "email": "chloe@example.com",   "name": "Chloe Ng",        "type": "part_time", "phone": "+60120000013", "label": "Coach at both studios"},
+  {"key": "daniel",  "email": "daniel@example.com",  "name": "Daniel Lee",      "type": "full_time", "phone": "+60120000014", "label": "Full-time coach (Bangsar)"},
+  {"key": "emma",    "email": "emma@example.com",    "name": "Emma Chong",      "type": "part_time", "phone": "+60120000015", "label": "Coach, Lead approved (Subang)"},
+  {"key": "faiz",    "email": "faiz@example.com",    "name": "Faiz Hassan",     "type": "part_time", "phone": "+60120000016", "label": "Coach (Subang)"},
+  {"key": "grace",   "email": "grace@example.com",   "name": "Grace Ong",       "type": "part_time", "phone": "+60120000017", "label": "New coach, no classes yet (Bangsar)"},
+  {"key": "hafiz",   "email": "hafiz@example.com",   "name": "Hafiz Ismail",    "type": "part_time", "phone": "+60120000018", "label": "Left the studio (set to inactive)"}
+]
